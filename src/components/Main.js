@@ -5,8 +5,7 @@ import {TextField, Button,} from "@mui/material";
 function Main(props){
 
   const [userInput, setUserInput] = useState("");
-  // const [data, setData] = useState("");
-  // const [userName, setUserName] = useState("");
+
 
   const clearUserData = (newValue) => {
     props.clearUserData(newValue)
