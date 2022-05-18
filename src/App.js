@@ -6,8 +6,7 @@ import "./App.css";
 
 
 function App() {
-
-  const [userInput, setUserInput] = useState("");
+  
   const [name, setName] = useState("");
   const [login, setUserName] = useState("");
   const [followers, setFollowers] = useState("");
@@ -43,11 +42,12 @@ function App() {
 
   return (
     <BrowserRouter>
-    <Main/>
-
-    { <Routes>
+    { 
+    <Routes>
+       <Route path="/" element={<Main/>}/>
        <Route path="/user-profile" element={<Profile/>}/>
-    </Routes> }
+    </Routes> 
+    }
    </BrowserRouter>
 
   );
